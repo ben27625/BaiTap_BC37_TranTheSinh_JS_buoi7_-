@@ -18,10 +18,110 @@
     <div class="container">
       <h1 class="m-auto">Bài tập JS buổi 7 , 8</h1>
       <div class="row bg-light">
+        <form action="" class="row align-item-center">
+          <input type="number" class="col-4 ms-2" id="listNumber" />
+          <button class="col-1 ms-5 btn btn-secondary" onclick="addNumber()">
+            Thêm Số
+          </button>
+        </form>
+        <div class="result"><span id="arrayResult"> </span></div>
         <div class="example">
-          <form action="" class="row align-item-center">
-            <input type="number" />
-          </form>
+          <div class="exam mt-5">
+            <div class="exam-one">
+              <h2 onclick="open(event)">1,Tổng số dương</h2>
+              <div class="alert" id="one">
+                <button class="btn btn-primary ms-2" onclick="sum()">
+                  Tính tổng</button>
+                <div class="result" id="resultOne"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="exam mt-5">
+            <div class="exam-one">
+              <h2>2,Điếm số dương</h2>
+              <div class="alert" id="two">
+                <button onclick="increase()" class="btn btn-primary ms-2"></button>
+                  Điếm số
+                </button>
+                <div class="result" id="resultTwo"></div>
+              </div>
+            </div>
+          </div>
+          <div class="exam mt-5">
+            <div class="exam-one">
+              <h2>3,Tìm số nhỏ nhất</h2>
+              <div class="alert" id="three">
+                <button class="btn btn-primary ms-2" onclick="min()">Tìm số nhỏ nhất</button>
+                <div class="result" id="resultThree"></div>
+              </div>
+            </div>
+          </div>
+          <div class="exam mt-5">
+            <div class="exam-one">
+              <h2>4,Tìm số dương nhỏ nhất</h2>
+              <div class="alert" id="four">
+                <button class="btn btn-primary ms-2" onclick="minInt()">Tìm số</button>
+                <div class="result" id="resultFour"></div>
+              </div>
+            </div>
+          </div>
+          <div class="exam mt-5">
+            <div class="exam-one">
+              <h2>5,Tìm số chẵn cuối cùng</h2>
+              <div class="alert" id="five">
+                <button class="btn btn-primary ms-2" onclick="exam5()">
+                  Tính số chẵn cuối cùng
+                </button>
+                <div class="result" id="resultFive"></div>
+              </div>
+            </div>
+          </div>
+          <div class="exam mt-5">
+            <div class="exam-one">
+              <h2>6,Đỗi chỗ</h2>
+              <div class="alert" id="six">
+                <button class="btn btn-primary ms-2">Đổi chỗ</button>
+                <div class="result"></div>
+              </div>
+            </div>
+          </div>
+          <div class="exam mt-5">
+            <div class="exam-one">
+              <h2>7,Sắp xếp tăng dần</h2>
+              <div class="alert" id="seven">
+                <button class="btn btn-primary ms-2" onclick="exam7()">Sắp xếp</button>
+                <div class="result" id="resultSeven"></div>
+              </div>
+            </div>
+          </div>
+          <div class="exam mt-5">
+            <div class="exam-one">
+              <h2>8,Tìm số nguyên đầu tiền</h2>
+              <div class="alert" id="eight">
+                <button class="btn btn-primary ms-2" onclick="exam8()">Tính số</button>
+                <div class="result " id=" resultEight"></div>
+              </div>
+            </div>
+          </div>
+          <div class="exam mt-5">
+            <div class="exam-one">
+              <h2>9,Điếm số nguyên</h2>
+              <div class="alert night">
+                <button class="btn btn-primary ms-2">Điếm số</button>
+                <div class="result"></div>
+              </div>
+            </div>
+          </div>
+          <div class="exam mt-5">
+            <div class="exam-one">
+              <h2>10,So sánh số lượng số âm với số dương</h2>
+              <div class="alert" id="ten">
+                <button class="btn btn-primary ms-2">So sánh</button>
+                <div class="result"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
