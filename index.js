@@ -92,6 +92,31 @@ function exam5() {
 // exam 6
 
 function exam6() {
+    // lấy vị trí
+    var first1 = document.getElementById("first").value ;
+    var second2 = document.getElementById("second").value ;
+
+    if(first1 >= 0 && first1 <= listNumber.length) {
+        if(second2 >= 0 && second2 <= listNumber.length) {
+            var third = listNumber[first1]  ;
+            var  fourth = listNumber[second2];
+
+            listNumber[first1] = fourth;
+            listNumber[second2] = third;
+            
+            document.getElementById("resultSix") = listNumber;
+
+
+        } else {
+            alert("Vị trí không tồn tại");
+            return;
+        }
+    } else {
+        alert(" Không tồn tại vị trí")
+        return;
+    }
+
+
 
 }
 
@@ -175,6 +200,28 @@ function exam9() {
 // exam 10
 
 function exam10() {
+
+    var countPositiveNumber = 0;
+    var countNegativeNumber = 0;
+
+    for(var i = 0; i < listNumber.length; i++) {
+        if(listNumber[i] > 0) {
+            countPositiveNumber += 1;
+
+        } else {
+            countNegativeNumber += 1;
+        }
+    }
+
+    var result = "";
+    if(countNegativeNumber > countPositiveNumber) {
+        result = "Số âm > Số dương"
+    } else if(countNegativeNumber === countPositiveNumber) {
+        result = "Số âm = Số dương"
+    } else {
+        result = "Số âm < số dương"
+    }
     
+    document.getElementById("resultTen").innerHTML = result;
 }
 
