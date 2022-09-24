@@ -103,8 +103,12 @@ function exam6() {
 
             listNumber[first1] = fourth;
             listNumber[second2] = third;
+
+            // indexof , lastIndexOf,
             
-            document.getElementById("resultSix") = listNumber;
+            var listString = listNumber.toString();
+
+            document.getElementById("resultSix") = "Vị trị sau khi đổi là"  + listString;
 
 
         } else {
