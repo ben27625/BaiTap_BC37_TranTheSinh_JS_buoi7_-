@@ -151,13 +151,20 @@ document.getElementById("resultEight").innerHTML = prime;
 // exam 9
 var addNumbers = [];
 function addNum() {
-    
-
     addNumbers.push(+document.getElementById("inputNine").value);
     document.getElementById("outputNine").innerHTML = addNumbers;
 }
 
 function exam9() {
+    var join = listNumber.concat(addNumbers);
+    var count = 0;
+    for(var i = 0; i < join.length; i++) {
+        if(Number.isInteger(join[i])) {
+            count += 1;
+        }
+    }
+
+    document.getElementById("resultNine").innerHTML = count;
 
   
 
