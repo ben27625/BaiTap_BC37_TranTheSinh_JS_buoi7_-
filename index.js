@@ -3,30 +3,22 @@
 // }
 
 
-listNumber = [-1,1,2,3,4,5,5,6];
+var listNumber = [1,2,3,4,5,6];
 
 
-// console.log(listNumber)
-// function addNumber() {
+
+function addNumber() {
     
 
-//     listNumber = listNumber.push(document.getElementById("listNumber").value);
-
-    
-//     for (var i = 0  ; i < listNumber.length ; i++ ) {
-//         var result = listNumber[i];
+  listNumber.push(+document.getElementById("listNumber").value);
 
 
-//          console.log(result);
-
-
-//          document.getElementById("arrayResult").innerHTML = result ;
+         document.getElementById("arrayResult").innerHTML = listNumber ;
        
        
-//       }
+      }
      
-//     };
-
+    
  
 // exam 1 
 
@@ -106,19 +98,15 @@ function exam6() {
 // exam 7
 
 function exam7() {
-    // listNumber.sort();
-    // document.getElementById("resultSeven").innerHTML = evenNumber;
+    var sortNumber = listNumber.sort();
+    document.getElementById("resultSeven").innerHTML = sortNumber;
 
 }
 
 // exam 8
 
-function exam8() {
 
-
-    for(var i = 0; i < listNumber.length ; i++ ) {
-        n = listNumber[i];
-    function testInteger (n) {
+function testPrime(n) {
         var isPrime = true;
     
         if (n < 2) {
@@ -139,18 +127,41 @@ function exam8() {
             }
         }
         return isPrime;
-    }
-    break;
+}
+
+function exam8() {
     
-    } 
-  
-    document.getElementById("resultEight").innerHTML = n;
+    var prime = 0;
+    for(var i = 0 ; i < listNumber.length ; i++) {
+        if(testPrime(listNumber[i])) {
+            prime = listNumber[i];
+            break;
+        } else {
+            prime = -1;
+        }
+
+    }
+
+
+document.getElementById("resultEight").innerHTML = prime;
 
 }
 
+
 // exam 9
+var addNumbers = [];
+function addNum() {
+    
+
+    addNumbers.push(+document.getElementById("inputNine").value);
+    document.getElementById("outputNine").innerHTML = addNumbers;
+}
 
 function exam9() {
+
+  
+
+
     
 }
 

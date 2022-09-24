@@ -12,18 +12,18 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
       <h1 class="m-auto">Bài tập JS buổi 7 , 8</h1>
       <div class="row bg-light">
-        <form action="" class="row align-item-center">
+        <div action="" class="row align-item-center">
           <input type="number" class="col-4 ms-2" id="listNumber" />
           <button class="col-1 ms-5 btn btn-secondary" onclick="addNumber()">
             Thêm Số
           </button>
-        </form>
+        </div>
         <div class="result"><span id="arrayResult"> </span></div>
         <div class="example">
           <div class="exam mt-5">
@@ -41,8 +41,8 @@
             <div class="exam-one">
               <h2>2,Điếm số dương</h2>
               <div class="alert" id="two">
-                <button onclick="increase()" class="btn btn-primary ms-2"></button>
-                  Điếm số
+                <button class="btn btn-primary ms-2" onclick="increase()" >          Điếm số</button>
+  
                 </button>
                 <div class="result" id="resultTwo"></div>
               </div>
@@ -107,9 +107,15 @@
           <div class="exam mt-5">
             <div class="exam-one">
               <h2>9,Điếm số nguyên</h2>
+              <div class="row">
+                <input type="number" class="col-3 ms-4" id="inputNine">
+                <button class="col-1 ms-5 btn btn-secondary" onclick="addNum()">Nhập thêm </button>
+                <div id="outPutNine " class="result"></div>
+              </div>
+
               <div class="alert night">
                 <button class="btn btn-primary ms-2">Điếm số</button>
-                <div class="result"></div>
+                <div class="result" id="resultNine" ></div>
               </div>
             </div>
           </div>
@@ -131,6 +137,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
